@@ -13,7 +13,7 @@ class View
             return;
         }
 
-        $filePath = __DIR__ . '/../views/' . $view . '.php';
+        $filePath = __DIR__ . '/../../../../views/' . $view . '.php';
 
         // LFI protection
         if (!file_exists($filePath) || !is_readable($filePath)) {

@@ -14,8 +14,8 @@ class Routing
     {
         $this->router = new RouterRouter([
             "paths" => [
-                "controllers" => __DIR__ . "/../../app/Controllers",
-                "middlewares" => __DIR__ . "/../../app/Middlewares",
+                "controllers" => __DIR__ . "/../../../../../app/Controllers",
+                "middlewares" => __DIR__ . "/../../../../../app/Middlewares",
             ],
             "namespaces" => [
                 "controllers" => "App\\Controllers",
