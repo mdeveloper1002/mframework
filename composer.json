@@ -1,10 +1,16 @@
 {
-    "name": "mdeveloper1002/mframework",
-    "type": "library",
-    "autoload": {
-        "psr-4": {
-            "Mdeveloper1002\\Mframework\\": "src/"
-        }
-    },
-    "require": {}
+  "name": "mdeveloper1002/mframework",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Mdeveloper1002\\Mframework\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=8.0",
+    "izniburak/router": "^2.5",
+    "symfony/dotenv": "^6.0",
+    "ramsey/uuid": "^4.7",
+    "ext-pdo": "*"
+  }
 }
