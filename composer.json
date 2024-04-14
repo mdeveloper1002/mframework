@@ -1,0 +1,10 @@
+{
+    "name": "mdeveloper1002/mframework",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Mdeveloper1002\\Mframework\\": "src/"
+        }
+    },
+    "require": {}
+}
