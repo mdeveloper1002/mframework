@@ -7,7 +7,7 @@ use PDOException;
 
 class Connection
 {
-    private static $instance = null;
+    private static ?Connection $instance = null;
     private $conn;
     private $host;
     private $user;
@@ -26,7 +26,8 @@ class Connection
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
         } catch (PDOException $e) {
-            echo "Connection failed: " . $e->getMessage();
+            //echo "Connection failed: " . $e->getMessage();
+            echo "Connection failed: Database connection failed. Please check your database configuration in the .env file.";
         }
     }
 
